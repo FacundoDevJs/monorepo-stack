@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/api/dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,10 @@
     "apps/*"
   ],
   "devDependencies": {
+    "prisma": "^5.9.0",
     "turbo": "^1.11.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.0"
   }
 }
